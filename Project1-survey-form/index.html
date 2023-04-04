@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <title>Survey Form</title>
+        <meta charset="UTF-8">
+        <link rel="stylesheet" href="styles.css">
+    </head>
+
+    <body>
+        <h1 id="title">Oceanic Voyage Survey Form</h1>
+        <p id="description">
+            Thank you for your feedback, and we hope
+            your journey was world-changing
+        </p>
+
+        <form id="survey-form">
+            <fieldset>
+                <label id="name-label" for="name">
+                    Name
+                    <input id="name" type="text" placeholder="Enter your name..." required>
+                </label>
+                <label id="email-label" for="email">
+                    Email
+                    <input id="email" type="email" placeholder="Enter your email..." required>
+                </label>
+                <label id="number-label" for="number">
+                    Age
+                    <input id="number" type="number" min="13" max="120" placeholder="Enter your age...">
+                </label>
+            </fieldset>
+
+            <fieldset>
+                <!-- Dropdown role menu -->
+                <label for="dropdown">
+                    What was your role on ship?
+                    <select id="dropdown" name="ship-role">
+                        <option value="">(select one)</option>
+                        <option value="1">Captain</option>
+                        <option value="2">Crew Member</option>
+                        <option value="3">Marine Biologist</option>
+                        <option value="4">Tourist</option>
+                    </select>
+                </label>
+                <!-- Radio Buttons: ticket type -->
+                <p class="survey-text">What type of expedition did you go on?</p>
+                <label>
+                    <input type="radio" name="ticket-type" class="inline" value="1"> Short and fun (1 day)
+                </label>
+                <label>
+                    <input type="radio" name="ticket-type" class="inline" value="2"> Long, research based (1 week)
+                </label>
+            </fieldset>
+            <fieldset>
+                <p class="survey-text">Did you see these animals?</p>
+                <!-- Checkbox -->
+                <label>
+                    <input type="checkbox" class="inline" value="sharks">
+                    Sharks
+                </label>
+                <label>
+                    <input type="checkbox" class="inline" value="manta-rays">
+                    Manta Rays
+                </label>
+                <label>
+                    <input type="checkbox" class="inline" value="Whales">
+                    Whales
+                </label>
+                <label>
+                    <input type="checkbox" class="inline" value="Sea Otters">
+                    Sea Otters
+                </label>
+                <!-- textarea: Describe your experience -->
+                <label>
+                    How was your experience?
+                    <textarea rows="3" cols="30" placeholder="It was a dark and stormy night, when suddenly..."></textarea>
+                </label>
+            </fieldset>
+            
+            <input type="submit" id="submit">
+        </form>
+    </body>
+</html>

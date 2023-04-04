@@ -1,0 +1,69 @@
+* {
+    box-sizing: content-box;
+}
+
+body {
+    background-color: #d3d3d3;
+    font-family: 'Open Sans', sans-serif;
+}
+
+main {
+    margin: 10px;
+    padding: 0 25px;
+    background-color: #cfebcf;
+    border-radius: 10px;
+}
+
+h1 {
+    text-align: center;
+    padding: 0.5em;
+    font-size: 2.0rem;
+}
+
+p {
+    padding-bottom: 25px;
+    text-indent: 3em;
+}
+
+li, figcaption, p {
+    font-size: 20px;
+    font-weight: 600;
+}
+
+li {
+    padding-bottom: 10px;
+}
+li:last-child {
+    padding-bottom: 0;
+}
+
+figure {
+    margin: 0;
+}
+
+img {
+    display: block;
+    margin: 0 auto;
+    margin-bottom: 25px;
+    width: 90%;
+    max-width: 100%;
+    box-shadow: 0 0 25px 10px rgb(20, 34, 19);
+}
+
+figcaption {
+    text-align: center;
+}
+
+.tribute-info {
+    margin: 40px auto;
+    width: 60%;
+}
+
+.tribute-info h2 {
+    text-align: center;
+    font-size: 32px;
+}
+
+.tribute-info ul {
+    list-style:circle
+}
